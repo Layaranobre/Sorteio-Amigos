@@ -39,6 +39,16 @@ body {
     padding: 40px 0 0;
 }
 
+/* imagem do banner */
+.imagem-banner {
+    width: 50%;
+    position: relative;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 390px;
+}
+
 /* Seção de entrada */
 .input-section {
     flex: 60%;
@@ -49,16 +59,17 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
 }
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
+    font-size: 45px;
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+    text-align: center;
+    margin-left: auto;
 }
 
 .section-title {
@@ -67,7 +78,7 @@ body {
     font-weight: 700;
     color: var(--color-primary);
     margin: 10px 0;
-    text-align: center;
+    
 }
 
 /* Contêineres de entrada e botão */
