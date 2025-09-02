@@ -65,7 +65,7 @@ function sortearAmigo() {
     setTimeout(() => {
         // Sorteia um nome aleatório após 2 segundos (simulando um sorteio)
         const indiceSorteado = Math.floor(Math.random() * listaAmigos.length);
-        const amigoSorteado = listaAmigos[indiceSorteado].textContent;
+        const amigoSorteado = listaAmigos[indiceSorteado].childNodes[0].textContent.trim();
 
         // Extrai apenas o nome do amigo, ignorando o texto do botão "Remover"
         const nomeAmigo = amigoSorteado.split('Remover')[0].trim();
