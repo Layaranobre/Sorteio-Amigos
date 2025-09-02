@@ -29,7 +29,7 @@ function adicionarAmigo() {
 
     // Cria um botão "Remover" para o item da lista
     let botaoRemover = document.createElement('button');
-    botaoRemover.textContent = 'Remover';
+    botaoRemover.textContent = 'Excluir';
     botaoRemover.classList.add('button-remove');
     botaoRemover.onclick = function () {
         listaAmigos.removeChild(novoItem); // Remove o item da lista
@@ -39,9 +39,8 @@ function adicionarAmigo() {
     novoItem.appendChild(botaoRemover);
 
     //Estilizar o botão remover pelo javascript pois não exite esse botão no HTML
-    botaoRemover.style.position = 'relative'; // Para definir a posição
-    botaoRemover.style.left = '10px';  // distância da esquerda para a direita
-    botaoRemover.style.marginBottom = '7px';
+    botaoRemover.classList.add('botao-pequeno');
+    
 
     // Adiciona o item à lista de amigos
     listaAmigos.appendChild(novoItem);

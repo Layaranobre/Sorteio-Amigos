@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #836ba3;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
@@ -41,12 +41,13 @@ body {
 
 /* imagem do banner */
 .imagem-banner {
-    width: 50%;
+    width: auto;
+    height: 113%;
     position: relative;
     bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 390px;
+    
 }
 
 /* Seção de entrada */
@@ -63,7 +64,7 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 45px;
+    font-size: 57px;
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
@@ -89,6 +90,17 @@ body {
     max-width: 600px;
     margin-top: 20px;
 }
+
+.botao-pequeno { /*Esse botão "EXCLUIR" Está criado no javascript*/
+    position: relative;
+    left: 10px;
+    margin-bottom: 7px;
+    height: 1.5rem;
+    width: 3.7rem;
+    font-size: 0.9rem;
+    padding: 2px 5px;
+    border: 1px solid black;}
+
 
 .input-name {
     width: 100%;
@@ -161,7 +173,7 @@ ul {
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .button-draw img {
@@ -170,4 +182,27 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+/*Site responsivo - Ajuste de tela*/ 
+@media(min-width: 320px) and (max-width: 767.98px){  /*Celulares menores*/
+
+.imagem-banner{
+    width: auto;
+    height: 70%;
+    top: 33px;
+    left: 75px;}
+
+.main-title{
+    font-size: 28px;
+    position: absolute;
+    left: 25px;
+    margin-bottom: 2.8rem;}
+
+.section-title{
+    font-size: 23px;
+    margin-block: 2rem;
+}
+
+
 }
