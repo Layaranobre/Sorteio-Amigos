@@ -74,3 +74,13 @@ function sortearAmigo() {
         resultado.innerHTML = `<li class="resultado-animacao">O amigo secreto é: <strong>${nomeAmigo}</strong></li>`;
     }, 2000); // 2 segundos de animação
 }
+
+
+    // Permitir adicionar amigo pressionando ENTER 
+    //Fica fora da função, porque toda vez que apertar ENTER, chama a função
+       document.getElementById('amigo').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // evita comportamento padrão do submit
+        adicionarAmigo();
+    }
+});
