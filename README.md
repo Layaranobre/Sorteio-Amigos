@@ -73,8 +73,6 @@ Sorteio-Amigos/
 
 - [ ] Impedir que alguém tire a si mesmo
 - [ ] Enviar o resultado por e-mail
-- [ ] Remover participantes da lista
-- [ ] Layout ainda mais responsivo
 
 ## 👩‍💻 Autora
 
